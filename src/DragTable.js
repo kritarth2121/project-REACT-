@@ -1,6 +1,6 @@
 export const DragTable = (props) => {
     if (!props.excelData.length) {
-        return <div className="noFileContainer">No File Uploaded</div>
+        return <div className="noFileContainer ml-12">No File Uploaded</div>
     }
     const table = props.excelData
     const tableBody = table?.slice(1)
@@ -71,7 +71,7 @@ export const DragTable = (props) => {
 
     return (
         <div
-            className="w-full h-full"
+            className="w-full h-full ml-12"
             onDrop={(e) => drop(e)}
             onDragOver={(e) => onDragOver(e)}
         >
