@@ -61,7 +61,7 @@ export const DragTable = (props) => {
 
             for (let i = 0; i < tableBody.length; i++) {
                 let child = document.createElement('div')
-                child.className = 'border-2 border-blue-500 w-20 h-10'
+                child.className = 'border-2 border-blue-500 w-20 h-20'
                 child.innerHTML = tableBody[i][id]
                 element.appendChild(child)
             }
